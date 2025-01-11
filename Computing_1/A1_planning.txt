@@ -42,4 +42,4 @@
 - a razão deve estar entre 0 e 1, 0 <= q < 1
 - a soma dos n primeiros termos é dado por: Sn = a1*(q**n-1)/q-1
 - Vou subtrair o valor aproximado (pg infinita) do valor real (pg finita)
-- testar com diferentes razões 
+- testar com diferentes razões
