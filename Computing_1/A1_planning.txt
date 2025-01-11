@@ -1,0 +1,45 @@
+# Cálculos Geométricos
+
+# 1 Área do Retângulo
+- Calcular a área de um retângulo
+- Á área é dada pela multiplicação dos lados do retângulo
+- posso definir duas entradas l1 e l2 referentes aos lados
+- No retorno faço o código multiplicar estes dois valores
+
+# 2 Área superficial de um cubo
+- Calcula a área da superfície de um cubo de aresta c
+- a área é dada pela função feita em #1, só passar como entrada l1=c e l2=c
+- O resultado é a área de uma das faces vezes as 6 faces existentes
+
+# 3 Área de um anel
+- Calcular a área de um anel com a informação dos raios
+- Posso callcular a área dos dois circulos com os raior e subtrair o menor do maior
+- a área de um circulo é calculada por (pi*r^2)
+- pi vai ser aproximado para 3,14
+
+
+# Cálculos Algébricos
+
+# 4 Calculo da média de dois numeros
+- Calcular a media
+- somar duas entradas e dividir a soma por dois
+
+# 5 ordenada
+- Calcular a ordenada de uma funçção do segundo grau
+- usuário fornece a,b,c e abscissa
+- a ordenada é dada por y = a*x**2 + b*x + c
+
+# 6 media com pesos para dois números
+- media ponderada é dada por (n1*p1 + n2*p2)/(p1 + p2)
+- Ordenar entrada como n1,p1,n2,p2
+
+# 7 erro de aproximação
+- Diferença entre a aproximação e o valor que queremos aproximar
+- aproximar a soma dos termos de uma pg infinita
+- quanto mais termos somamos melhor a aproximação, o mesmo que dizer que menor é o erro
+- a pg começa em 1, seja infinita ou normal
+- a soma dos termos de uma pg infinita é dado por: S = 1/(1-q), q é a razão
+- a razão deve estar entre 0 e 1, 0 <= q < 1
+- a soma dos n primeiros termos é dado por: Sn = a1*(q**n-1)/q-1
+- Vou subtrair o valor aproximado (pg infinita) do valor real (pg finita)
+- testar com diferentes razões 
