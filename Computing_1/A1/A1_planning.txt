@@ -43,3 +43,35 @@
 - a soma dos n primeiros termos é dado por: Sn = a1*(q**n-1)/q-1
 - Vou subtrair o valor aproximado (pg infinita) do valor real (pg finita)
 - testar com diferentes razões
+
+# Cálculos Aplicados
+
+# 8 gorjeta
+- calcular a gorjeta de 15%
+- receber o valor da conta e retornar a gorjeta calcullada em cima
+
+# 9 gorjeta com legislação
+- entradas valor da conta e porcentagem gorjeta de acordo com a legislação
+- definir como a porcentagem deve ser inserida e orientar o usuário
+- calcular multiplicando um pelo outro
+
+# 10 saldo final
+- entradas saldo inicial, meses, taxa de juros
+- informar como inserir a taxa de juros (0.00)
+- converter meses para anos
+- somar o saldo inicial com (saldo inicial*taxa de juros*meses)
+
+# 11 distancia que um barco é arrastado pela correnteza
+- Entradas: velocidade do barco, velocidade da correnteza e largura do rio
+- O tempo que o barco anda na vertical é o mesmo da horizontal, para chegar no mesmo ponto final
+- A velocidade do barco é vb = l/t então t=l/vb
+- O mesmo para o a velocidade da correnteza (vc) que arrasta o barco na horizontal t=s/vc
+- como os tempos são iguais l/vb = s/vc, então a distância s que a correnteza arrasta o barco é:
+s = l*(vc/vb)
+- orientar o usuário a usar o S.I.
+
+
+
+
+
+

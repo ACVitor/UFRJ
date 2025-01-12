@@ -38,6 +38,7 @@ def average_2_numbers(n1,n2):
 #Test
 # print(average_2_numbers(-5,7), average_2_numbers(2,-2), average_2_numbers(5,5), average_2_numbers(3,4), average_2_numbers(3.0,4.0))
 
+
 # 5 - ordinate of the 2 degree function
 def y_function2(a,b,c,x):
     '''Calculate ordinate value of the 2 degree function'''
@@ -64,9 +65,54 @@ def w_average(n1,p1,n2,p2):
 # 7 - erro of approximation PG
 def erro_pg_approx(q,n):
     '''Calculate error of approximation between infinity and normal geometric progression
-    Given:  q - ratio (razão), attention 0 <= q < 1
+    Give:   q - ratio (razão), attention 0 <= q < 1
             n - number of first terms of the PG'''
     return (1/(1-q)) - ((1*(q**n)-1)/(q-1))
 
 #Test
 # print(erro_pg_approx(0.5,5),erro_pg_approx(0.5,10),erro_pg_approx(0.5,20),erro_pg_approx(0.5,50),erro_pg_approx(0,10))
+
+
+# Applied Calculations
+
+# 8 - tip (gorjeta)
+def tip_15(bill):
+    '''Calculate the tip as a 15% of the bill.
+    Give: bill -> bill value'''
+    return bill*0.15
+
+#Test
+# print(tip_15(10.00),tip_15(50.00),tip_15(5.00),tip_15(0.00),tip_15(100.59))
+
+
+# 9 - tip on legislation
+def real_tip(bill,tip_percent):
+    '''Calculate the tip based on legislation.
+    Give:   bill -> bill value
+            tip_percent (inform this in real format, like to 0.00, example: for 15% digit 0.15)'''
+    return bill*tip_percent
+
+#Test
+# print(real_tip(10.00,0.15),real_tip(100,0.0),real_tip(5.00,0.50),real_tip(10,0.05))
+
+
+# 10 - Bank Balance (Saldo)
+def balance(initial_balance,juros,months):
+    '''Calculate the current balance
+    Give:   initial_balance
+            juros (Is a month fees(juros), inform this in real format, like to 0.00)
+            months'''
+    return initial_balance*(1+juros*months)
+
+#Test
+# print(balance(15000,0.01,5))
+
+
+# 11 - Boat and river current
+def boat_hdist(boat_velocity,river_velocity,river_width):
+    '''Calculate horizontal distance traveled by boat in function of the river current.
+    Inform data in S.I.'''
+    return river_width*(river_velocity/boat_velocity)
+
+#Test
+# print(boat_hdist(15,5,50))
