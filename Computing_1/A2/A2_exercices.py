@@ -172,7 +172,7 @@ def rf_trigonometria(a):
     return pow(sin(radians(a)),2) + pow(cos(radians(a)),2)
 
 #Testes
-print(rf_trigonometria(30),rf_trigonometria(45),rf_trigonometria(60))   # Curioso o caso do 45
+# print(rf_trigonometria(30),rf_trigonometria(45),rf_trigonometria(60))   # Curioso o caso do 45
 
 
 # 5 - Área do setor circular
