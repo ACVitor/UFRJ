@@ -1,0 +1,50 @@
+# 1 calcular o valor absoluto de um número
+	- não usar a função abs do módulo math
+	- comparar funcionamento com a função abs
+- Funcionamento
+	- Entrada: número qualquer
+		- se o número for maior que 0, retornar o próprio número
+		- se o número for menor que 0, multiplicar o número por -1
+
+
+# 2  - Informa quantas raízes tem a eq de segundo grau
+	- Entrada: coeficientes a,b e c
+	- Usar a função discriminante no arquivo A2_exercises
+	- com base no resultado do discriminante retornar a informação
+		- dis = 0 -> uma raiz real
+		- dis > 0 -> duas raízes reais
+		- dis < 0 -> nenhuma raíz real
+
+# 3 - Replica o texto
+	- Entradas: Texto e número de vezes que o texto será repetido
+	- Incluir no retorno um espaço entre as repetições pois provavel do usuário não colocar
+
+# 4 - formata data
+	- Entrada: três números inteiros, respectivamente dia, mês e ano
+	- Formatar no retorno como dd/mm/aa
+	- Como os dados já serão informados o que representam em ordem na entrada não vou precisar usar condicionais para ordenar
+	- Usar condição apenas para dia e mês para incluir o zero nos casos em que eles forem menores que 10
+
+# 5 - Comportamento de função por partes
+	- Entradas: Valores de x
+	- Fazer casos do comportamento da função da esquerda para a direita
+		- 1) para valores negativos f(x)=0
+		- 2) para valores 0 <= x <= 2, f(x) é a reta y = x
+		- 3) para valores 2 < x <= 3.5, f(x) é constante y = 2
+		- 4) para valores 3.5 < x <= 5, f(x) é constante y = 3
+		- 5) para valores 5 < x, f(x) é uma eq de grau 2, y = x^2 - 10x + 28
+	- Testar todos os casos (5 casos)
+
+# 6 - Pacote para calcular salário líquido
+- Fazer módulos diferentes
+- a) Função Calcula o valor do desconto pelo INSS
+	- Entrada: salário
+	- Identificar o desconto usando condicional
+	- retornar o valor no tipo decimal
+- b) Função 2: Calcula o desconto pelo IR
+	- Entrada: salário
+	- Identificar o desconto usando condicional
+	- retornar o valor no tipo decimal
+- c) Calcula o salário líquido
+	- Usar as funções desenvolvidas em a) e b)
+
