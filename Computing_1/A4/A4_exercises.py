@@ -94,7 +94,7 @@ def valida_tel(telefone):
 
 
 # 4 - Formatos de data aceitáveis
-def formata_data(data):
+def formato_data(data):
     '''Informa as formatações possíveis para uma certa entrada como data
     Informe: 'xx/xx/xx' neste formato como uma suposta data
     
@@ -109,14 +109,26 @@ def formata_data(data):
     bloco_3 = int(data[6:])
 
     if (bloco_1 > 31) or (bloco_2 > 31):
+        # Não há formatos possíveis
         formatos = ()
 
+    elif bloco_3 > 31:
+        # Sobram dd/mm/yy e mm/dd/yy
+        if bloco_2 > 12:
+            # Sobra o caso mm/dd/yy
+            formatos = 'mm/dd/yy',
+        else:
+            formatos = 'dd/mm/yy', 'mm/dd/yy'
+    
     else:
+
         formatos = 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
 
     return formatos
     
     
 #Testes
-print(formata_data('09/09/00'))
-print(formata_data('55/05/99'))
+print(formato_data('98/25/07'))
+print(formato_data('01/01/00'))
+print(formato_data('00/10/01'))
+print(formato_data('01/01/01'))
