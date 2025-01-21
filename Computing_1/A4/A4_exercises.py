@@ -108,7 +108,7 @@ def formato_data(data):
     bloco_2 = int(data[3:5])
     bloco_3 = int(data[6:])
 
-    if (bloco_1 > 31) or (bloco_2 > 31):
+    if (bloco_1 > 31) and (bloco_2 > 31):
         # Não há formatos possíveis
         formatos = ()
 
