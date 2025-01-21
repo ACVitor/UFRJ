@@ -1,0 +1,37 @@
+# 1 - siga [ideia]
+- Entradas: tupla com 4 informações(nome, nota_1, nota_2, nota_3)
+- Retorna uma tupla com 3 elementos (nome, média, situação)
+	- Estruturar o código par calcular a média (ver se tem no módulo math)
+		- Condicionais sobre a situação do aluno
+		- Return apenas no final com uma variável que armazene uma tupla
+
+# 2 - chi_zodiaco
+- Entradas: ano de nascimento
+- Saída: signo correspondente
+	- Estruturar sem o if
+		- Tentar usar tupla para armazenar os signos
+		- A indentificação do signo é feita calculando o resto de: ano de nascimento/12
+		- puxar o signo de acordo com o indexador da tupla
+
+# 3 - Confere validade do numero
+Entrada: número do telefone como uma string
+	- Identificar se o número é válido no Brasil
+	- Números válidos tem 11 (Celular com DDD) ou 10 (Fixo com DDD) ou 9 (celular sem DDD) ou 8 (fixo sem DDD)
+		- Se for válido separar os casos em que foi digitado o DDD
+			- Separar em celular ou fixo
+Retornar uma tupla com ('ddd', 'número') ; se não for válido o retorno é: ('','')
+
+# 4 - formata_data
+- Entrada: uma sequancia supostamente data no formato xx/xx/xx, string
+- formatar as partes da entrada que representam os números como int
+	- Tratar casos possíveis com o if
+		- Os anos podem ser qualquer valor real
+		- Os dias devem estar entre 1 <= dia <= 31
+		- Os meses devem estar entre 1 <= mês <= 12
+	- Fazer como se fosse uma cascata, verificando cada informação antes do /
+Formatos válidos:
+dd/mm/yy
+yy/mm/dd
+mm/dd/aa
+
+Retorna uma tupla com os formatos válidos para a entrada
