@@ -107,28 +107,13 @@ def formato_data(data):
     bloco_1 = int(data[0:2])
     bloco_2 = int(data[3:5])
     bloco_3 = int(data[6:])
-
-    if (bloco_1 > 31) and (bloco_2 > 31):
-        # Não há formatos possíveis
-        formatos = ()
-
-    # elif bloco_3 > 31:
-    #     # Sobram dd/mm/yy e mm/dd/yy
-    #     if bloco_2 > 12:
-    #         # Sobra o caso mm/dd/yy
-    #         formatos = 'mm/dd/yy',
-    #     else:
-    #         formatos = 'dd/mm/yy', 'mm/dd/yy'
-    
-    else:
-
-        formatos = 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
-
-    return formatos
     
     
 #Testes
-# print(formato_data('98/25/07'))
-# print(formato_data('01/01/00'))
-# print(formato_data('00/10/01'))
-# print(formato_data('01/01/01'))
+print(formato_data('99/25/99'))
+print(formato_data('00/25/00'))
+print(formato_data('25/25/00'))
+print(formato_data('98/25/07'))
+print(formato_data('01/01/00'))
+print(formato_data('00/10/01'))
+print(formato_data('01/01/01'))
