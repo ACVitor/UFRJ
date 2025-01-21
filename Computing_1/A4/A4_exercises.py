@@ -94,7 +94,7 @@ def valida_tel(telefone):
 
 
 # 4 - Formatos de data aceitáveis
-def formato_data(data):
+def formato_data(data = ''):
     '''Informa as formatações possíveis para uma certa entrada como data
     Informe: 'xx/xx/xx' neste formato como uma suposta data
     
@@ -102,18 +102,121 @@ def formato_data(data):
     Entradas: str
     Saída: tupla'''
 
-    # Fomatos possíveis: dd/mm/yy; mm/dd/yy e yy/mm/dd
+    # Fomatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
 
     bloco_1 = int(data[0:2])
     bloco_2 = int(data[3:5])
     bloco_3 = int(data[6:])
+
+    if bloco_1 <= 31:
+        # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+        if bloco_1 <= 12:
+            # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+            if bloco_1 != 0:
+                # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                if bloco_2 <= 12:
+                    # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                    if bloco_2 != 0:
+                        # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                        if bloco_3 <= 31:
+                            # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                            if bloco_3 != 0:
+                                # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                                formatos = 'dd/mm/yy', 'mm/dd/yy', 'yy/mm/dd'
+                            else:
+                                # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy'
+                                formatos = 'dd/mm/yy', 'mm/dd/yy'
+                        else:
+                            # Formatos possíveis: 'dd/mm/yy', 'mm/dd/yy'
+                            formatos = 'dd/mm/yy', 'mm/dd/yy'
+                    else:
+                        # Formatos possíveis: ()
+                        formatos = ()
+                else:
+                    # Formatos possíveis: 'mm/dd/yy'
+                    formatos = 'mm/dd/yy',
+            else:
+                # Formatos possíveis: 'yy/mm/dd'
+                if bloco_2 != 0:
+                    # Formatos possíveis: 'yy/mm/dd'
+                    if bloco_3 <= 31:
+                        # Formatos possíveis: 'yy/mm/dd'
+                        if bloco_3 != 0:
+                            # Formatos possíveis: 'yy/mm/dd'
+                            formatos =  'yy/mm/dd',
+                        else:
+                            # Formatos possíveis: ()
+                            formatos = ()
+                    else:
+                        # Formatos possíveis: ()
+                        formatos = ()
+                else:
+                    # Formatos possíveis: ()
+                    formatos = ()
+        else:
+            # Formatos possíveis: 'dd/mm/yy', 'yy/mm/dd'
+            if bloco_2 <= 12:
+                # Formatos possíveis: 'dd/mm/yy', 'yy/mm/dd'
+                if bloco_2 != 0:
+                    # Formatos possíveis: 'dd/mm/yy', 'yy/mm/dd'
+                    if bloco_3 <= 31:
+                        if bloco_3 != 0:
+                            # Formatos possíveis: 'dd/mm/yy', 'yy/mm/dd'
+                            formatos = 'dd/mm/yy', 'yy/mm/dd'
+                        else:
+                            # Formatos possíveis: 'yy/mm/dd'
+                            formatos = 'yy/mm/dd',
+                    else:
+                        # Formatos possíveis: 'dd/mm/yy'
+                        formatos = 'dd/mm/yy',
+                else:
+                    # Formatos possíveis: ()
+                    formatos = ()
+            else:
+                # Formatos possíveis: ()
+                formatos = ()
+    elif bloco_1 > 31:
+        # Formatos possíveis: 'yy/mm/dd'
+        if bloco_2 <= 12:
+            # Formatos possíveis: 'yy/mm/dd'
+            if bloco_2 != 0:
+                # Formatos possíveis: 'yy/mm/dd'
+                if bloco_3 <= 31:
+                    # Formatos possíveis: 'yy/mm/dd'
+                    if bloco_3 != 0:
+                        # Formatos possíveis: 'yy/mm/dd'
+                        formatos = 'yy/mm/dd',
+                    else:
+                        # Formatos possíveis: ()
+                        formatos = ()
+                else:
+                    # Formatos possíveis: ()
+                    formatos = ()
+            else:
+                # Formatos possíveis: ()
+                formatos = ()
+        else:
+            # Formatos possíveis: ()
+            formatos = ()           
+
+    else:
+        formatos = () 
+   
+    return formatos
     
     
 #Testes
-print(formato_data('99/25/99'))
-print(formato_data('00/25/00'))
-print(formato_data('25/25/00'))
-print(formato_data('98/25/07'))
-print(formato_data('01/01/00'))
-print(formato_data('00/10/01'))
-print(formato_data('01/01/01'))
+# print('\nCasos que não podem ser formatos de datas:\n')
+# print(formato_data('00/00/00'))
+# print(formato_data('31/00/00'))
+# print(formato_data('00/12/00'))
+# print(formato_data('00/00/31'))
+# print(formato_data('31/00/31'))
+# print(formato_data('00/01/00'))
+# print(formato_data('13/13/00'))
+
+# print('\nTestes propostos no Laboratório:\n')
+# print(formato_data('98/25/07'))
+# print(formato_data('01/01/00'))
+# print(formato_data('00/10/01'))
+# print(formato_data('01/01/01'))

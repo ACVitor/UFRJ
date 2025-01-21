@@ -35,3 +35,5 @@ yy/mm/dd
 mm/dd/aa
 
 Retorna uma tupla com os formatos válidos para a entrada
+
+#### Tentar otimizar o código 4 depois se possível
