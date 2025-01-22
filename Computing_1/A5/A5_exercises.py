@@ -86,3 +86,29 @@ fulano = cadastra_contato('fulaninho')
 # print(atualiza_cadastro(fulano, 3, 'fu_insta'))
 # print(fulano)
 # print(atualiza_cadastro(fulano, 4, ' '))
+
+
+# 2 - Cadeia de Aminoácidos que sintetizaram uma proteína
+def traduz_RNA(molecula_rna):
+    '''Retorna os três aminoácidos correspondentes a uma molécula de RNA responsáveis por sintetizar uma proteína.
+    Informe: (molecula_rna) a sequência de 3 trincas que representam a molécula de RNA mensageiro
+    
+    Identificação de tipos trabalhados na função
+    Entradas: str
+    Saída: str'''
+
+    trinca_1 = molecula_rna[:3]
+    trinca_2 = molecula_rna[3:6]
+    trinca_3 = molecula_rna[6:]
+
+    tradutor = {'UUU':'Phe', 'CUU':'Leu', 'UUA':'Leu', 'AAG':'Lisina', 'UCU':'Ser', 'UAU':'Tyr', 'CAA':'Gln'}
+    aminoacidos = tradutor[trinca_1] + '-' + tradutor[trinca_2] + '-' + tradutor[trinca_3]
+
+    return aminoacidos
+
+#Testes
+# print(traduz_RNA('UUUUUAUCU'))
+# print(traduz_RNA('UUUCUUUUA'))
+# print(traduz_RNA('UUUAAGUCU'))
+# print(traduz_RNA('UAUCAAUUA'))
+# print(traduz_RNA('UUACUUUUA'))
