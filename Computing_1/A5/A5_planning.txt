@@ -23,5 +23,15 @@ pegar a lista de entrada e identificar com estrutura if qual informação irá s
 Trabalhar cada caso dentro de seu próprio if
 	- No primeiro caso só trocar
 	- no segundo identificar se a info está na lista
-	- no terceiro retornar bool False	
+	- no terceiro retornar bool False
+
+# 2 - cadeia_aminoacidos
+Entrada: molécula de RNA (str de tamanho 9)
+Saída: lista com os três aminoácidos que representam a proteína sintetizada.
+
+Estrutura
+Separar a str de entrada para identificar as trincas de RNA
+criar a tabela de correspondência entre RNA e aminoácidos como um dicionário
+fazer uma lista que armazena os valores das chaves do dicionário
+	a chave do dicionário irão ser as trincas cortadas da str de entrada
 
