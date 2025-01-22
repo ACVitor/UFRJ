@@ -1,0 +1,27 @@
+# 1 - Contatinhos app
+
+(a) Cria novo contato
+Entrada: nome(str), telefone(list), email(str), instagram(str)
+	Obrigatórias: nome
+	não obrigatórias retornar uma str vazia por padrão
+	Na criação de contato só pode cadastrar um telefone
+Estrutura
+	Receber as entradas e armazenar elas numa lista
+	primeiro criar uma lista vazia
+Retorna uma lista com as informações do contato
+
+(b) Atualiza contatos
+Só atualiza uma informação por vez
+Entrada: lista com as informações atuais, indice da informação a atualizar, informação nova
+	- nome, email ou instagram apenas substitui
+	- Se o telefone se encontra nada acontece, se não, então adicionar
+	- Se o índice passado não indicar nenhuma informação, nada é feito
+Retorno: Booleano dizendo se foi alterado ou não
+
+Estrutura:
+pegar a lista de entrada e identificar com estrutura if qual informação irá ser modificada
+Trabalhar cada caso dentro de seu próprio if
+	- No primeiro caso só trocar
+	- no segundo identificar se a info está na lista
+	- no terceiro retornar bool False	
+
