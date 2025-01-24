@@ -1,0 +1,19 @@
+# 1 Excluir telefone
+Entrada: lista com as informações (modelo segue a função cadastro) e telefone a se excluir
+	Se estiver na lista o telefone é removido
+	Se não nada é feito
+A função retorna um bool se a mudança foi ou não feita
+O teste será feito checando o conteúdo da lista
+
+# 2 Informações do campeonato
+Entrada: dicionário com pontos cada time sendo a chave de seus pontos
+	Definir variáveis para trabalho:
+		nomes dos times participantes = chaves do dicionário
+		pontuação do campeão = retorna os pontos do time que for o campeão
+			pegar a lista de valores (os pontos) e guardar o índice do maior valor
+			pegar a lista de chaves (os times)
+			**Desisti destas duas linhas de cima porque o exercício pede só a pontuação do campeão e não o nome então não foi necessária usar a ideia
+			selecionar na lista de times o índice da pontuação do campeão 
+		media de pontos do campeonato = soma todos os valores do dicionário e divide pelo numero de elementos do dicionário
+
+Retorna: lista com: Nomes dos times, pontuação do campeão, média de pontos por time
