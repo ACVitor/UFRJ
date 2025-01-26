@@ -1,0 +1,28 @@
+# 1 - Jogo de dados
+jogar dois dados
+	criar duas variáveis, uma para cada dado
+		elas guardão o número aleatório gerado de 1 a 6
+	criar um contador para contar o número de vezes que os dados foram jogados
+		começa em 1
+	enquanto os valores dos dados não forem iguais, repetir a jogada e somar a jogada ao contador
+	retornar o número de jogadas
+
+# 2 - Busca contato
+
+Primeiro vou criar uma função auxiliar que cria a lista de contatos com a função cadastro
+
+Função de busca de fato:
+	Entrada = lista de contatos, nome(str)
+	criar um indice contados para a busca dentro da lista de entrada
+	criar uma variável que armazene o tamanho da lista
+	criar uma varável com uma lista inicialmente vazia (lista de contatos com o nome)
+	
+	enquanto o indice for menor que o tamanho da lista:
+		se o nome estiver dentro da lista avaliada:
+			a lista de contatos como o nome vai receber as infos dessa lista
+		se não: (Acho que posso omitir essa linha)
+			a lista continua como antes
+		somar 1 ao indice contador
+	retornar a lista de contatos com os nomes, a lista é uma lista de lista com as informações deles
+			
+	
