@@ -1,0 +1,17 @@
+# 1 - Quantas vezes um elemento aparece
+Entrada: string ou lista ou tupla, elemento qualquer
+Tem que ser capaz de processar qualquer um desses
+Contando quantas vezes o elemento aparece:
+	Criar var vazia para contar quantas vezes o elemento aparece
+	Estutura de repetição for para procurar no iterável de entrada
+		dentro do for fazer o condicional para conferir se o elemento está no iterável
+		se estiver somar 1 a variável de contagem
+		se não estiver não fazer nada
+Retornar número de vezes que o elemento aparece (int)
+
+# 2 - Quantas vezes aparece no trecho
+Mesma estrutura da função anterior mas agora o for percorre só o trecho indicado
+Entrada:string ou lista ou tupla, elemento qualquer, início(int), fim(int)
+
+Considerar o condicional que corrige o tamanho da fatia passada pela pessoa
+Tentar usar a função do item anterior
