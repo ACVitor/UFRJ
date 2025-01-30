@@ -15,3 +15,32 @@ Entrada:string ou lista ou tupla, elemento qualquer, início(int), fim(int)
 
 Considerar o condicional que corrige o tamanho da fatia passada pela pessoa
 Tentar usar a função do item anterior
+
+# 3 - Jogo da forca
+Entrada: palavra, lista com os caracteres atuais da mascara, letra escolhida
+Fazer a verificação se a setra escolhida está na palavra secreta, isso dentro do for
+
+Percorrer a lista mascara
+	Pegar o indice do item atual percorrido e verificar se na letra com este indice na palavra é igual a letra informada
+		Se for substituir a mascara pela letra
+	Se não for não irá modificar nada
+A função não tem retorno
+
+# 4 - Exemplo de série convergente
+(a) somar o número de termos referente ao número informado na entrada
+	criar  uma variável para armazenar a soma
+	aplicar a fórmula da série para cada termo, fazer isso com a estrutura for
+	fazer o for percorrer uma lista com o tamanho de n passado na entrada
+		para cada item do for, calcular o termo geral e somar numa variável
+retorna o valor da soma
+
+(b) soma da serie com erro inferior a 0.01
+o resultado a soma infinita é pi/4, o erro vai ser o calculado menos isso, tudo em modulo
+Avaliar isso no while para executar até ficar menor
+	armazenar o número de passagens num contador
+	usar esse contador para calcular de novo a serie e armazenar isso numa variável
+	atualizar o calculo do erro
+
+Retornar uma tupla com o a soma e o erro
+
+
